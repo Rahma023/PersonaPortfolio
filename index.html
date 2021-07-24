@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>DevJane Portfolio Website</title>
+        <title>Rahma Faiz Portfolio</title>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />  
         <link href="https://fonts.googleapis.com/css?family=Lora:400,700|Roboto+Slab:400,700&display=swap" rel="stylesheet"> 
@@ -16,15 +16,16 @@
         <div class="menu">
             <nav>
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="About Us.html">About</a></li>
-                <li><a href="Contact.html">Projects</a></li>
-                <li><a href="Our Team.html">Contact</a></li>
-                
+                <li><a href="#home">Home</a></li>
+                <li><a href="#About">About</a></li>
+                <li><a href="#projectS">Projects</a></li>
+                <!-- <li><a href="#contactme">Contact</a></li> -->
+
     
             </ul>
         
     </nav>
+    </div>
         
         
         <!-- Introduction -->
@@ -33,5 +34,71 @@
                 Hi, I am <strong>Rahma Faiz</strong>
             </h1>
             <p class="section__subtitle section__subtitle--intro">Android Developer</p>
-            <img src="img/mm.jpg" alt="a picture of Jane Smith smiling" class="intro__img">
+            <img src="img/mm.jpg" alt="a picture of Rahma" class="intro__img">
         </section>
+
+        <section class="about" id="About">
+            <h3>About Me</h3>
+            <p>I am a software engineering student,passionate  on 
+                developing android applications<br/> with various 
+                programming languages.I am a self-driven 
+                and a life-long learner,<br/> always curious to gain
+                more skills to improve my thinking and 
+                development.<br/> I am a team player and dedicate
+                to deliver what is required to the need.<br/> It feels 
+                good to bring ideas to life.</p>
+
+                <button type="button" onclick="alert('Do you want to download my resume?')" class="btnformat">Resume</button>
+
+        </section>
+
+        <section class="portfolio" id="Portfolio">
+            <h3 class="proj">My Projects</h3>
+            <div class="container">
+                <div class="card">
+                    <div class="imgbox">
+                        <img src="img/backe.png" alt="">
+        
+                    </div>
+                    <div class="content">
+                        <h3>Back-End</h3>
+                        <p>Guesing game
+                        </p>
+                    </div>
+        
+                </div>
+        
+                <div class="card">
+                    <div class="imgbox">
+                        <img src="img/c.jpeg" alt="">
+        
+                    </div>
+                    <div class="content">
+                        <h3>Android Application</h3>
+                        <p>Charity App
+                        </p>
+                    </div>
+        
+                </div>
+        
+                <div class="card">
+                    <div class="imgbox">
+                        <img src="img/design.png" alt="">
+        
+                    </div>
+                    <div class="content">
+                        <h3>UI/UX Design</h3>
+                        <p>App Design
+                        </p>
+                    </div>
+        
+                </div>
+        
+            </div>
+            <p>App Design
+            </p>
+        </section>
+        
+       
+        </body>
+        </html>

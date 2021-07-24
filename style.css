@@ -3,9 +3,6 @@
 *::after {
     box-sizing: border-box;
 }
-
-/* Custom Properties, update these for your own design */
-
 :root {
     --ff-primary: 'Lora', serif;
     --ff-secondary: 'Roboto Slab', serif;
@@ -35,12 +32,6 @@
     }
 }
 
-/* General styles */
-
-/* endable this to add smooth scrolling */
-/* html {
-    scroll-behavior: smooth;
-} */
 
 
 body {
@@ -61,19 +52,14 @@ img {
     max-width: 100%;
 }
 
-strong { font-weight: var(--fw-bold) }
+/* strong { font-weight: var(--fw-bold) } */
 
-:focus {
+/* :focus {
     outline: 3px solid var(--clr-accent);
     outline-offset: 3px;
-}
+} */
 
 
-
-
-
-
-/* Typography */
 
 h1,
 h2,
@@ -109,15 +95,15 @@ h3 { font-size: var(--fs-h3) }
 .section__subtitle--about {
     background: var(--clr-accent);
     padding: .25em 1em;
-    font-family: var(--ff-secondary);
+    /* font-family: var(--ff-secondary); */
     margin-bottom: 1em;
 }
 
-.section__subtitle--work {
+/* .section__subtitle--work {
     color: var(--clr-accent);
     font-weight: var(--fw-bold);
     margin-bottom: 2em;
-}
+} */
 
 
 .intro__img {
@@ -157,9 +143,10 @@ h3 { font-size: var(--fs-h3) }
         text-align: right;
         position: relative;
         left: -1.5em;
-        width: calc(100% + 1.5em);
+        /* width: calc(100% + 1.5em); */
     }
 }
+/* nav sect */
 
 .menu ul{
     list-style: none;
@@ -184,4 +171,98 @@ h3 { font-size: var(--fs-h3) }
 .menu a:hover{
     padding-bottom: 1px 2px;
     border-bottom: 0.1px solid #D4AF37;
+}
+/* end of nav sect */
+
+/* about section */
+.about{
+    text-align: center;
+    background-color: white;
+   
+    
+    
+}
+h3{
+    font-weight: bold;
+}
+p{
+    justify-content: start;
+    color: black;
+    font-family: sans-serif;
+}
+.btnformat{
+    color:black;
+    font-weight: bold;
+    padding: 10PX 40PX;
+    background-color: #D4AF37;
+    cursor: pointer;
+}
+/* end of about section */
+
+/* portfolio section*/
+
+body{
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+    background: #0C0B0B;
+}
+.container{
+    position: relative;
+    width: 1100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 30px;
+}
+.container .card{
+    position: relative;
+    max-width: 300px;
+    height: 215px;
+    background: #fff;
+    margin: 30px 10px;
+    padding: 20px 15px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.5);
+    transition: 0.3s ease-in-out;
+
+}
+.container .card:hover{
+    height: 420px;
+}
+.proj{
+    text-align: center;
+    /* margin: 0; */
+}
+.container .card .imgbox{
+    position: relative;
+    width: 260px;
+    height: 260px;
+    top: -60px;
+    left: 20px;
+    z-index: 1;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+
+}
+.container .card .imgbox img{
+    max-width: 100%;
+    border-radius: 4px;
+}
+.container .card .content{
+    position: relative;
+    margin-top: -140px;
+    padding: 10px 15px;
+    text-align: center;
+    color: #111;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.3s ease-in-out;
+}
+.container .card:hover .content{
+    visibility: visible;
+    opacity: 1;
+    margin-top: -40px;
+    transition-delay: 0.3s;
 }
