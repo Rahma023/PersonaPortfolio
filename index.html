@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Rahma Faiz Portfolio</title>
+        <title>Rahma Faiz-Portfolio</title>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />  
         <link href="https://fonts.googleapis.com/css?family=Lora:400,700|Roboto+Slab:400,700&display=swap" rel="stylesheet"> 
@@ -13,18 +13,13 @@
     </head>
     <body>
 
-        <div class="menu">
-            <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#About">About</a></li>
-                <li><a href="#projectS">Projects</a></li>
-                <!-- <li><a href="#contactme">Contact</a></li> -->
-
-    
-            </ul>
-        
-    </nav>
+    <div class="navbar">
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#About">About Me </a></li>
+            <li><a href="#portfolio">Projects</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
     </div>
         
         
@@ -34,7 +29,13 @@
                 Hi, I am <strong>Rahma Faiz</strong>
             </h1>
             <p class="section__subtitle section__subtitle--intro">Android Developer</p>
-            <img src="img/mm.jpg" alt="a picture of Rahma" class="intro__img">
+            <img src="img/rahma.png" alt="a picture of Rahma" class="intro__img">
+
+            <a href="#About">
+                <div class="scroll-down"></div>
+            </a>
+
+
         </section>
 
         <section class="about" id="About">
@@ -52,7 +53,7 @@
 
         </section>
 
-        <section class="portfolio" id="Portfolio">
+        <!-- <section class="portfolio" id="Portfolio">
             <h3 class="proj">My Projects</h3>
             <div class="container">
                 <div class="card">
@@ -97,7 +98,42 @@
             </div>
             <p>App Design
             </p>
+        </section> -->
+        <section id="portfolio">
+            <h3 class="headings">Projects</h3>
+            <div class="gallery">
+                <img src="img/bank.png" alt="">
+                <img src="img/front.jpeg" alt="">
+                <img src="img/ux.jpeg" alt="">
+            </div>
+            
         </section>
+
+        <!-- Footer -->
+<footer class="footer">
+    <ul class="social-list">
+        <li class="social-list__item">
+            <a class="social-list__link" href="https://codepen.io">
+                <i class="fab fa-codepen"></i>
+            </a>
+        </li>
+        <li class="social-list__item">
+            <a class="social-list__link" href="http://dribbble.com">
+                <i class="fab fa-dribbble"></i>
+            </a>
+        </li>
+        <li class="social-list__item">
+            <a class="social-list__link" href="https://twitter.com">
+                <i class="fab fa-twitter"></i>
+            </a>
+        </li>
+        <li class="social-list__item">
+            <a class="social-list__link" href="https://github.com">
+                <i class="fab fa-github"></i>
+            </a>
+        </li>
+    </ul>
+</footer>
         
        
         </body>
